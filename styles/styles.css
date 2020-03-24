@@ -1,0 +1,1241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 1px;
+  max-width: 1438px;
+  background-color: #FFF4FD;
+}
+
+.header {
+  height: 23px;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  box-shadow: 0 1px 0 0 #110038;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+
+h6 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-weight: lighter;
+}
+
+nav {
+  padding-left: 91px;
+  padding-right: 91px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 102px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+}
+
+.button-CrearGuifos {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  padding: 9px 26px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.button-CrearGuifos a {
+  text-decoration: none;
+}
+
+.button-CrearGuifos:hover {
+  background: #E6BBE2;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dashed #110038;
+  outline-offset: -4px;
+}
+
+.button-ElegirTema {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  padding: 9px 26px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.button-ElegirTema:hover {
+  background: #E6BBE2;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dashed #110038;
+  outline-offset: -4px;
+}
+
+.button-MisGuifos {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 18px;
+  width: 95px;
+  height: 32px;
+  text-align: start;
+}
+
+.button-MisGuifos:hover {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  opacity: 0.7;
+  letter-spacing: 0;
+  line-height: 18px;
+  outline: 1px dashed #110038;
+}
+
+.button-MisGuifos:active {
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown .dropbtn {
+  height: 38px;
+  width: auto;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  padding: 13px 14px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.dropdown .dropbtn:hover {
+  background: #E6BBE2;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dashed #110038;
+  outline-offset: -4px;
+}
+
+.show {
+  display: block;
+}
+
+.contenedorDropdown {
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  width: 176px;
+  height: 102px;
+  margin-left: -138px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.SailorDay {
+  display: block;
+  background: #FFF4FD;
+  border: 1px solid #CCA6C9;
+  box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+  width: 150px;
+  height: 36px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.SailorNight {
+  display: block;
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  width: 150px;
+  height: 36px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.buscador {
+  width: 1200px;
+  height: 99px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 44px;
+  margin-left: 100px;
+}
+
+.buscarBarra {
+  width: 1194px;
+  height: 24px;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding-left: 6px;
+  padding-top: 3px;
+  margin-bottom: 10px;
+}
+
+.buscadorInput {
+  height: 48px;
+  width: 1057px;
+  margin-left: 15px;
+}
+
+.botonBuscador {
+  background: #E6E6E6;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  width: 102px;
+  height: 36px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 8px;
+}
+
+.botonBuscador_active {
+  color: #110038;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dashed #110038;
+  outline-offset: -4px;
+}
+
+.botonBuscador_input {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.botonBuscador img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+#resultados_sugeridos_contenedor {
+  max-width: 1200px;
+  height: 150px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  margin-left: 100px;
+  font-family: 'Chakra Petch', sans-serif;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.fondo_resultados_sugeridos_primero {
+  border: 1px solid #110038;
+  width: 1055px;
+  height: 36px;
+  margin-left: 15px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fondo_resultados_sugeridos {
+  background: #F0F0F0;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  width: 1055px;
+  height: 34px;
+  margin-left: 15px;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h3 {
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-weight: lighter;
+}
+
+.sugerencia_contenedor {
+  width: 1200px;
+  height: 32px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  margin-top: 64px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.sugerencia_contenedor h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  margin-left: 7px;
+}
+
+.gifs_sugerencias {
+  display: flex;
+  flex-direction: row wrap;
+  margin-left: 100px;
+}
+
+.gif_sugerencia_contenedor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 315px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  margin-right: 20px;
+}
+
+.gif_sugerencia_barra {
+  width: 280px;
+  height: 24px;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  margin-top: 3px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 4000;
+}
+
+.gif_sugerencia {
+  width: 280px;
+  height: 280px;
+  margin-top: 2px;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+
+#ver_mas {
+  position: absolute;
+  width: 81px;
+  height: 34px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background: #4180f6;
+  border: 1px solid #4c2f99;
+  box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  position: relative;
+  margin-top: 260px;
+  margin-left: 7px;
+  z-index: 3000;
+}
+
+#ver_mas:hover {
+  position: absolute;
+  width: 81px;
+  height: 34px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background: #4180f6;
+  border: 1px solid #4c2f99;
+  box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  position: relative;
+  margin-top: 260px;
+  margin-left: 7px;
+  z-index: 3000;
+  outline: 1px dashed #110038;
+  outline-offset: -4px;
+}
+
+.tendencias_contenedor {
+  width: 1200px;
+  height: 32px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  margin-top: 64px;
+  margin-left: 100px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tendencias_contenedor h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  margin-left: 7px;
+}
+
+#gifs {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+.gif_tendencias_barra {
+  width: 270px;
+  height: 24px;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  position: absolute;
+  z-index: 5000;
+  display: none;
+  align-content: center;
+  margin-top: -38px;
+}
+
+.gif_tendencias_barra:before {
+  padding-top: 4px;
+  padding-left: 4px;
+  content: "#gif #tendencias #guifos";
+}
+
+.elementoGrillaGif:hover .gif_tendencias_barra {
+  display: block;
+}
+
+#search_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  position: absolute;
+}
+
+.menu_pricipal_misgifos {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.flecha_volver {
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+
+.barra_chequeo {
+  max-width: 854px;
+  height: 24px;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding-left: 6px;
+  padding-right: 10px;
+  padding-top: 3px;
+  margin-bottom: 11px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.botones_chequeo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+#vista_previa_contenedor {
+  width: 860px;
+  height: 548px;
+  background: #E6E6E6;
+  align-content: center;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 88px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vista_previa_barra {
+  width: 854px;
+  height: 24px;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding-left: 6px;
+  padding-top: 3px;
+  margin-bottom: 11px;
+}
+
+.botones_vista_previa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.botones_vista_previa .cronometro {
+  width: 124px;
+  height: 36;
+  background-color: white;
+  border: 1px solid #979797;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  margin-left: 11px;
+}
+
+.crear_guifos {
+  width: 684px;
+  height: 386px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 44px;
+  margin-left: 100px;
+  margin-left: 387px;
+}
+
+#crear_guifos {
+  margin-bottom: 153px;
+}
+
+.crearBarra {
+  width: 678px;
+  height: 24px;
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding-left: 6px;
+  padding-top: 3px;
+  margin-bottom: 30px;
+}
+
+.crear_instrucciones {
+  display: flex;
+  flex-direction: row;
+}
+
+.crear_Instrucciones_Contenido {
+  display: flex;
+  flex-direction: row;
+}
+
+.window {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+  margin-right: 16px;
+}
+
+.instrucciones h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.instrucciones_pasos p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-left: 75px;
+  margin-bottom: 28px;
+}
+
+#precaptura {
+  display: flex;
+  flex-direction: row;
+}
+
+.botonCancelar {
+  width: 144px;
+  height: 36px;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  margin-left: 350px;
+}
+
+.botonComenzar {
+  width: 144px;
+  height: 36px;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  margin-left: 15px;
+}
+
+.mis_guifos_contenedor {
+  width: 1150px;
+  height: 32px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  margin-top: 64px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mis_guifos_contenedor h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  margin-left: 7px;
+}
+
+h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  margin-left: 7px;
+}
+
+#subirGifo {
+  width: 144px;
+  height: 36px;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  display: none;
+  margin-top: 10px;
+}
+
+#repetirCaptura {
+  width: 144px;
+  height: 36px;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  display: none;
+  margin-left: 365px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+#camara_img {
+  width: 832px;
+  height: 434px;
+  border: 1px solid #979797;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  margin-left: 8px;
+}
+
+.flecha_barra_vista {
+  width: 20px;
+  height: 20px;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#button_cam {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  width: 36px;
+  height: 36px;
+}
+
+#capturar_button {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  width: 144px;
+  height: 36px;
+  z-index: 10000;
+  display: block;
+}
+
+#contenedorboton {
+  display: flex;
+  margin-left: 663px;
+  margin-top: 455px;
+}
+
+#buttons_crear {
+  display: flex;
+  z-index: 5000;
+}
+
+#input_ready {
+  display: none;
+  width: 144px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  margin-left: 11px;
+  margin-right: 10px;
+  margin-top: 450px;
+}
+
+#button_clock {
+  background: #FF6161;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+  width: 36px;
+  height: 36px;
+  display: none;
+  margin-left: 490px;
+  margin-top: 450px;
+}
+
+#button_ready {
+  background: #FF6161;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  color: white;
+  width: 144px;
+  height: 36px;
+  display: none;
+  margin-top: 450px;
+}
+
+#captura {
+  display: none;
+}
+
+#vista_previa {
+  display: none;
+}
+
+#subir_guifo_contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#subir_guifo_contenedor {
+  width: 860px;
+  height: 548px;
+  background: #E6E6E6;
+  align-content: center;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 88px;
+  margin-bottom: 268px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.texto_subiendo {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+.texto_tiempo {
+  font-size: 12px;
+  color: rgba(17, 0, 56, 0.64);
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 14px;
+}
+
+#guifo_exitoso {
+  width: 684px;
+  height: 386px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 44px;
+  margin-left: 100px;
+  margin-left: 387px;
+}
+
+.contenedor_guifo_exitoso {
+  width: 365px;
+  height: 191px;
+  margin-left: 27px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+#guifo_exitoso {
+  display: none;
+}
+
+#video_record_container {
+  width: 832px;
+  height: 434px;
+  position: absolute;
+  border: 1px solid #979797;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  margin-left: 8px;
+  z-index: 8000
+}
+
+#button_container_repeat {
+  display: block;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 150000;
+}
+
+#repetir_o_subir {
+  display: flex;
+}
+
+.barra_carga {
+  width: 240px;
+  height: 24px;
+  position: absolute;
+  top: 720px;
+  left: 449px;
+  background: #B4B4B4;
+  box-shadow: inset 2px 2px 0 0 #000000, inset -2px -2px 0 0 #FFFCFC;
+  margin-left: 60px;
+}
+
+.barra_carga .divisor1 {
+  width: 60px;
+  height: 20px;
+  background: #F7C9F3;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.barra_carga .divisor2 {
+  width: 176px;
+  height: 20px;
+  background: #999999;
+  margin-top: -20px;
+  margin-left: 62px;
+}
+
+.forward {
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  position: absolute;
+  top: 721px;
+  left: 420px;
+  margin-left: 60px;
+}
+
+#img_forward {
+  margin-left: 6px;
+}
+
+.crear_gifos_2 {
+  width: 860px;
+  height: 548px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  display: none;
+}
+
+#subiendo_gif {
+  display: flex;
+  justify-content: center;
+  margin: 200px 200px 50px 200px;
+  display: none;
+}
+
+.crear_barra_titulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crear_titulo_2 {
+  color: white;
+  position: relative;
+  margin-left: 3px;
+  margin-top: 3px;
+  z-index: 1;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.cerrar_x {
+  position: absolute;
+  z-index: 200;
+  margin-left: 840px;
+  margin-top: 8px;
+}
+
+.crear_guifos_3 {
+  width: 684px;
+  height: 386px;
+  background: #E6E6E6;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 44px;
+  margin-left: 100px;
+  margin-left: 387px;
+  margin-bottom: 180px;
+}
+
+#cerrar_x4 {
+  position: absolute;
+  z-index: 18000;
+  margin-left: 660px;
+  margin-top: 8px;
+}
+
+.subiendo_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#subiendo_container {
+  width: 832px;
+  height: 434px;
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.globe {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 50px;
+}
+
+.texto_subiendo {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+.texto_tiempo {
+  font-size: 12px;
+  color: rgba(17, 0, 56, 0.64);
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 14px;
+  margin-top: -50px;
+}
+
+.crear_elementos_3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancelar_button {
+  width: 144px;
+  height: 36px;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  margin-right: 15px;
+}
+
+.cancelar_button a {
+  text-decoration: none;
+}
+
+#cancelar_subir {
+  margin-top: 20px;
+}
+
+.crear_titulo_3 {
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  width: 681px;
+  height: 24px;
+  color: white;
+  position: relative;
+  margin-left: 3px;
+  margin-top: 3px;
+  z-index: 1;
+}
+
+.cerrar_x3 {
+  position: absolute;
+  z-index: 200;
+  margin-left: 660px;
+  margin-top: -20px;
+}
+
+#gifoOk {
+  margin-left: 20px;
+  margin-top: 400px;
+  width: 365px;
+  height: 191px;
+  margin: 30px
+}
+
+.last_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 400px;
+  margin-top: -250px;
+}
+
+.success {
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+}
+
+.button_copy {
+  width: 256px;
+  height: 36px;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  margin: 10px;
+}
+
+.button_download {
+  width: 256px;
+  height: 36px;
+  background: #FFF4FD;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  margin: 10px;
+}
+
+.button_download a {
+  text-decoration: none;
+}
+
+.button_ready2 {
+  width: 144px;
+  height: 36px;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.button_ready2 a {
+  text-decoration: none;
+}
+
+.mis_guifos {
+  display: flex;
+  justify-content: center;
+}
+
+.mis_guifos_barra {
+  width: 1150px;
+  height: 32px;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  z-index: 12000;
+}
+
+#mis_guifos_container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  position: absolute;
+  margin-left: 100px;
+  margin-right: 100px;
+  z-index: 1500;
+}
+
+#subiendo_guifo_todo {
+  display: none;
+}
+
+#primero {
+  display: none;
+}
+
+.mis_guifos_galeria {
+  position: absolute;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 200px;
+}
+
+.galeria {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mis_guifos_container {
+  margin-top: 150px;
+}
+
+#tendencias_container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  position: absolute;
+  width: 1200px;
+  margin-left: 100px;
+
+}

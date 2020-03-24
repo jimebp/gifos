@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/styles.css" id="theme">
+  <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/363d45ec01.js"></script>
+  <script src="scripts/search.js"></script>
+  <script src="scripts/switchingMode.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/menu_desplegable.js"></script>
+  <script src="scripts/resultados_sugeridos_desplegable.js"></script>
+  <script src="scripts/crearguifos.js"></script>
+  <script src="scripts/tendencias.js"></script>
+
+  <title>Guifos</title>
+</head>
+
+<body>
+  <title>GifOs</title>
+  <header>
+    <div class="header">
+      <h6>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</h6>
+    </div>
+  </header>
+  <section id=menu_pricipal>
+    <nav>
+      <div id="logo"><img src="img/gifOF_logo.png" alt="logo" id="logo_img"></div>
+      <div class="menu">
+        <button class="button-CrearGuifos"><a href="creargifos.html">Crear Gifos</a></buttonclass="button-CrearGuifos">
+          <button class="button-ElegirTema">Elegir Tema</button>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <div class="contenedorDropdown">
+                <a href="#"><button class="SailorDay" id="SailorDay" onclick="swapStyleSheetToLight()">Sailor Day</button></a>
+                <a href="#"><button class="SailorNight" id="SailorNight" onclick="swapStyleSheetToDark()">Sailor Night</button></a>
+              </div>
+            </div>
+          </div>
+          <button class="button-MisGuifos"><a href="misguifos.html"><u>M</u>is Guifos</a></buttonclass="button-MisGuifos">
+      </div>
+    </nav>
+  </section>
+
+  <section id="buscador">
+    <div class="buscador">
+      <div class="buscarBarra">Buscar</div>
+      <div class="buscarContenido">
+        <span><input name="myInput" id="input" type="text" class="buscadorInput" onkeypress="keyFunction()"></span>
+        <span><button class="botonBuscador" id="buscadorBoton" onclick="buildingUrl()"><img src="img/lupa_inactive.svg" alt="lupa inactive" class="img_botonBuscador">Buscar</button></span>
+      </div>
+    </div>
+    <div class="dropdown-resultados" id="resultados_sugeridos_contenedor">
+      <span class="fondo_resultados_sugeridos_primero">
+        <h3 class="resultado_sugerido">Resultado de búsqueda sugerido</h3>
+      </span>
+      <span class="fondo_resultados_sugeridos">
+        <h3>Un resultado similar de búsqueda</h3>
+      </span>
+      <span class="fondo_resultados_sugeridos">
+        <h3>Y otro más</h3>
+      </span>
+    </div>
+  </section>
+
+  <section id="sugerencias">
+    <div class="sugerencia_contenedor">
+      <h3>Hoy te sugerimos</h3>
+    </div>
+
+    <div class="gifs_sugerencias">
+      <div class="gif_sugerencia_contenedor">
+        <div class="gif_sugerencia_barra">#Jonathanvanness<img src="img/close.svg" alt="cerrar" class="cerrar_gif_sugerencia_barra"></div>
+        <div id="gif_sugerencia_1" class="gif_sugerencia"></div>
+        <button id="ver_mas">Ver más...</button>
+      </div>
+      <div class="gif_sugerencia_contenedor">
+        <div class="gif_sugerencia_barra">#SailorMercury<img src="img/close.svg" alt="cerrar" class="cerrar_gif_sugerencia_barra"></div>
+        <div id="gif_sugerencia_2" class="gif_sugerencia"></div>
+        <button id="ver_mas">Ver más...</button>
+      </div>
+      <div class="gif_sugerencia_contenedor">
+        <div class="gif_sugerencia_barra">#FabFive<img src="img/close.svg" alt="cerrar" class="cerrar_gif_sugerencia_barra"></div>
+        <div id="gif_sugerencia_3" class="gif_sugerencia"></div>
+        <button id="ver_mas">Ver más...</button>
+      </div>
+      <div class="gif_sugerencia_contenedor">
+        <div class="gif_sugerencia_barra">#Unicorns&Rainbows<img src="img/close.svg" alt="cerrar" class="cerrar_gif_sugerencia_barra"></div>
+        <div id="gif_sugerencia_4" class="gif_sugerencia"></div>
+        <button id="ver_mas">Ver más...</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="tendencias">
+    <div class="tendencias_contenedor">
+      <h3>Tendencias</h3>
+    </div>
+    <div id="tendencias_container">
+    </div>
+  </section>
+
+  <section id="gifs">
+    <div id="contenedor_gifs">
+      <div id="search_container">
+        <h2></h2>
+      </div>
+    </div>
+  </section>
+</body>
+
+
+
+
+</html>
